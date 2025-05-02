@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
+import SberLogo from '@/components/ui/SberLogo';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,8 +38,9 @@ const Header = () => {
     }`}>
       <div className="container mx-auto max-w-6xl px-4">
         <div className="flex items-center justify-between">
-          <div className="text-xl font-bold text-primary">
-            <span className="hidden sm:inline">Разблокировка счетов</span>
+          <div className="flex items-center space-x-3 text-xl font-bold text-primary">
+            <SberLogo className="h-8 w-8" />
+            <span className="hidden sm:inline">Разблокировка</span>
             <span className="sm:hidden">115-ФЗ</span>
           </div>
           
